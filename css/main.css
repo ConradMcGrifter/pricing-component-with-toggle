@@ -72,8 +72,8 @@ button {
 }
 
 .pricing-card.-gradientBG {
-  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
   color: #f6f6fe;
 }
 
@@ -133,6 +133,7 @@ button {
   background: linear-gradient(to right, #a3a8f0, #696fdd);
   border-radius: 0.75rem;
   color: #f6f6fe;
+  font-size: 1.4rem;
 }
 
 .pricing-card > .learnMore.-gradientBg {

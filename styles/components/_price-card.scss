@@ -50,9 +50,10 @@
         width: 100%;
         padding: 0.75em;
         margin-top: 2rem;
-        background: $primary-gradient;
+        background: $primary-gradient-buttons;
         border-radius: 0.75rem;
         color: color(neutral-very-light-grayish-blue);
+        font-size: 1.4rem;
         &.-gradientBg {
             background: white;
             color: color(neutral-grayish-blue);
