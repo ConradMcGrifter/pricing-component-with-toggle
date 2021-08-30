@@ -1,9 +1,9 @@
 .pricing-card {
     background: white;
-    padding: 2rem;
+    padding: 2.5rem;
     color: color(neutral-dark-grayish-blue);
     border-radius: 0.75rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.171);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.116);
     @include flexCenter(column);
 
     &.-gradientBG {
@@ -13,7 +13,7 @@
 
     &.-big {
         @include desktopSize {
-            padding: 4rem 2rem;
+            padding: 4rem 2.5rem;
         }
     }
 
@@ -49,7 +49,7 @@
     > .learnMore {
         width: 100%;
         padding: 0.75em;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         background: $primary-gradient-buttons;
         border-radius: 0.75rem;
         color: color(neutral-very-light-grayish-blue);
