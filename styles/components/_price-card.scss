@@ -40,6 +40,7 @@
             padding: 1em;
             border-bottom: solid color(neutral-light-grayish-blue) 1px;
             border-top: solid color(neutral-light-grayish-blue) 1px;
+
             & + .info {
                 border-top: none;
             }
@@ -54,7 +55,8 @@
         border-radius: 0.75rem;
         color: color(neutral-very-light-grayish-blue);
         font-size: 1.4rem;
-        &.-gradientBg {
+
+        &.-gradientBG {
             background: white;
             color: color(neutral-grayish-blue);
         }
