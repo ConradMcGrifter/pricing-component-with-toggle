@@ -22,4 +22,16 @@ body {
   font-size: 1.5rem;
   font-family: "Montserrat", Arial, serif;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: "Montserrat", Arial, serif;
+}
 /*# sourceMappingURL=main.css.map */

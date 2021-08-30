@@ -15,10 +15,56 @@
         <title>Pricing Component w/Toggle</title>
     </head>
     <body>
-        Our Pricing Annually Monthly Basic $19.99 &dollar;199.99 500 GB Storage
-        2 Users Allowed Send up to 3 GB Learn More Professional &dollar;24.99
-        &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB Learn More
-        Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed Send
-        up to 20 GB Learn More
+        <main class="main">
+            <header class="pricing-header">
+                <h1 class="pricing-h1">Our Pricing</h1>
+                <div class="price-toggle--wrap">
+                    <label for="price-toggle">Annually</label>
+                    <button id="price-toggle">O</button>
+                    <label for="price-toggle">Monthly</label>
+                </div>
+            </header>
+            <div class="pricing-cards--container">
+                <!-- basic price card -->
+                <div class="pricing-card">
+                    <h2 class="pricePlan">Basic</h2>
+                    <h3 class="price">
+                        <span class="dollarSign">$</span>199.99
+                    </h3>
+                    <ul class="planInfo--wrap">
+                        <li class="info">500 GB Storage</li>
+                        <li class="info">2 Users Allowed</li>
+                        <li class="info">Send up to 3 GB</li>
+                    </ul>
+                    <button class="learnMore">LEARN MORE</button>
+                </div>
+                <!-- professional price card -->
+                <div class="pricing-card -big -gradientBG">
+                    <h2 class="pricePlan">Professional</h2>
+                    <h3 class="price">
+                        <span class="dollarSign">$</span>249.99
+                    </h3>
+                    <ul class="planInfo--wrap">
+                        <li class="info">1 TB Storage</li>
+                        <li class="info">5 Users Allowed</li>
+                        <li class="info">Send up to 10 GB</li>
+                    </ul>
+                    <button class="learnMore">LEARN MORE</button>
+                </div>
+                <!-- master price card -->
+                <div class="pricing-card">
+                    <h2 class="pricePlan">Master</h2>
+                    <h3 class="price">
+                        <span class="dollarSign">$</span>399.99
+                    </h3>
+                    <ul class="planInfo--wrap">
+                        <li class="info">2 TB Storage</li>
+                        <li class="info">10 Users Allowed</li>
+                        <li class="info">Send up to 20 GB</li>
+                    </ul>
+                    <button class="learnMore">LEARN MORE</button>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
