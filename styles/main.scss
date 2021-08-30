@@ -2,3 +2,6 @@
 @import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
 @import "base";
 @import "components/price-card";
+@import "layout/main--container";
+@import "layout/header/header";
+@import "layout/cards/pricing-card--container";

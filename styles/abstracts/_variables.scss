@@ -5,6 +5,10 @@ $colors: (
     neutral-dark-grayish-blue: hsl(232, 13%, 33%),
 );
 
-$primary-gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$primary-gradient: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+);
 
 $font-stack: "Montserrat", Arial, serif;

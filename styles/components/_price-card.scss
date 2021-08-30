@@ -1,0 +1,55 @@
+.pricing-card {
+    background: white;
+    padding: 2rem;
+    color: color(neutral-dark-grayish-blue);
+    border-radius: 0.75rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.171);
+    @include flexCenter(column);
+
+    &.-gradientBG {
+        background: $primary-gradient;
+        color: color(neutral-very-light-grayish-blue);
+    }
+
+    > .pricePlan {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    > .price {
+        font-size: 5.4rem;
+        @include flexCenter;
+        margin-bottom: 2rem;
+
+        > .dollarSign {
+            font-size: 2.8rem;
+        }
+    }
+
+    > .planInfo--wrap {
+        width: 100%;
+        text-align: center;
+
+        .info {
+            padding: 1em;
+            border-bottom: solid color(neutral-light-grayish-blue) 1px;
+            border-top: solid color(neutral-light-grayish-blue) 1px;
+            & + .info {
+                border-top: none;
+            }
+        }
+    }
+
+    > .learnMore {
+        width: 100%;
+        padding: 1em;
+        margin-top: 2rem;
+        background: $primary-gradient;
+        border-radius: 0.75rem;
+        color: color(neutral-very-light-grayish-blue);
+        &.-gradientBg {
+            background: white;
+            color: color(neutral-grayish-blue);
+        }
+    }
+}

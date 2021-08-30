@@ -1,0 +1,13 @@
+.pricing-cards--container {
+    @include flexCenter(column);
+    width: 100%;
+    padding: 2rem;
+
+    .pricing-card {
+        width: 100%;
+
+        & + .pricing-card {
+            margin-top: 1em;
+        }
+    }
+}

@@ -17,8 +17,7 @@ html {
 
 body {
   min-height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(#a3a8f0, #696fdd);
+  background: #f6f6fe;
   font-size: 1.5rem;
   font-family: "Montserrat", Arial, serif;
 }
@@ -33,5 +32,134 @@ a {
 
 button {
   font-family: "Montserrat", Arial, serif;
+  background: none;
+  border: none;
+}
+
+.pricing-card {
+  background: white;
+  padding: 2rem;
+  color: #494c5f;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.171);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.171);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pricing-card.-gradientBG {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  color: #f6f6fe;
+}
+
+.pricing-card > .pricePlan {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card > .price {
+  font-size: 5.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.pricing-card > .price > .dollarSign {
+  font-size: 2.8rem;
+}
+
+.pricing-card > .planInfo--wrap {
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-card > .planInfo--wrap .info {
+  padding: 1em;
+  border-bottom: solid #b3b5c6 1px;
+  border-top: solid #b3b5c6 1px;
+}
+
+.pricing-card > .planInfo--wrap .info + .info {
+  border-top: none;
+}
+
+.pricing-card > .learnMore {
+  width: 100%;
+  padding: 1em;
+  margin-top: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  border-radius: 0.75rem;
+  color: #f6f6fe;
+}
+
+.pricing-card > .learnMore.-gradientBg {
+  background: white;
+  color: #6d708d;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pricing-cards--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+
+.pricing-cards--container .pricing-card {
+  width: 100%;
+}
+
+.pricing-cards--container .pricing-card + .pricing-card {
+  margin-top: 1em;
 }
 /*# sourceMappingURL=main.css.map */
