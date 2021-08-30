@@ -10,4 +10,13 @@
             margin-top: 1em;
         }
     }
+
+    @include desktopSize {
+        flex-direction: row;
+        max-width: 85rem;
+
+        .pricing-card + .pricing-card {
+            margin-top: 0;
+        }
+    }
 }

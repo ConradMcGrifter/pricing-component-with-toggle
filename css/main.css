@@ -20,6 +20,19 @@ body {
   background: #f6f6fe;
   font-size: 1.5rem;
   font-family: "Montserrat", Arial, serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 li {
@@ -62,6 +75,12 @@ button {
   background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
   color: #f6f6fe;
+}
+
+@media only screen and (min-width: 900px) {
+  .pricing-card.-big {
+    padding: 4rem 2rem;
+  }
 }
 
 .pricing-card > .pricePlan {
@@ -108,7 +127,7 @@ button {
 
 .pricing-card > .learnMore {
   width: 100%;
-  padding: 1em;
+  padding: 0.75em;
   margin-top: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
@@ -135,6 +154,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .pricing-cards--container {
@@ -161,5 +181,18 @@ button {
 
 .pricing-cards--container .pricing-card + .pricing-card {
   margin-top: 1em;
+}
+
+@media only screen and (min-width: 900px) {
+  .pricing-cards--container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 85rem;
+  }
+  .pricing-cards--container .pricing-card + .pricing-card {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
