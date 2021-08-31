@@ -15,6 +15,14 @@
     > .pricing-card {
         width: 100%;
 
+        .price--wrap {
+            animation: none;
+
+            &.active {
+                animation: shrink 0.25s ease-in;
+            }
+        }
+
         &.-big {
             @include desktopSize {
                 padding: 4rem 2.5rem;

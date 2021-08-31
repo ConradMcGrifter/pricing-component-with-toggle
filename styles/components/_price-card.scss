@@ -48,33 +48,34 @@
         }
     }
 
+    // learn more link
     > .learnMore {
         text-align: center;
         width: 100%;
         padding: 0.75em;
         margin-top: 2.5rem;
         background: $primary-gradient-buttons;
-        border: solid 2px color(neutral-very-light-grayish-blue);
+        border: solid 1px color(neutral-very-light-grayish-blue);
         border-radius: 0.75rem;
         color: color(neutral-very-light-grayish-blue);
         font-size: 1.4rem;
         cursor: pointer;
 
         &:hover {
-            border: solid 2px color(neutral-grayish-blue);
+            border: solid 1px color(neutral-grayish-blue);
             background: white;
             color: color(neutral-grayish-blue);
         }
 
         &.-gradientBG {
             background: white;
-            border: solid 2px hsl(237, 63%, 64%);
+            border: solid 1px hsl(237, 63%, 64%);
             color: color(neutral-grayish-blue);
 
             &:hover {
                 background: none;
                 color: white;
-                border: solid white 2px;
+                border: solid white 1px;
             }
         }
     }

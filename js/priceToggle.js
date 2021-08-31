@@ -2,8 +2,18 @@ const PRICE_TOGGLE = document.getElementById("price-toggle");
 const ANUAL_LABEL = document.querySelector(".annualLabel");
 const MONTHLY_LABEL = document.querySelector(".monthlyLabel");
 const PRICES = document.querySelectorAll(".price");
+const PRICES_WRAP = document.querySelectorAll(".price--wrap");
 
 PRICE_TOGGLE.addEventListener("click", () => {
+    // this loop removes and adds the active class to give the price an animation. the scrollBy method is needed so that the animations trigger consistently
+    for (let i = 0; i < PRICES.length; i++) {
+        PRICES_WRAP[i].classList.remove("active");
+        PRICES_WRAP[i].scrollBy(0, 0);
+        PRICES_WRAP[i].classList.add("active");
+    }
+
+    // PRICES.forEach((price) => price.classList.add("active"));
+
     if (PRICE_TOGGLE.style.justifyContent == "flex-end") {
         PRICE_TOGGLE.style.justifyContent = "flex-start";
 
@@ -12,7 +22,6 @@ PRICE_TOGGLE.addEventListener("click", () => {
         PRICES[2].innerText = "399.99";
     } else {
         PRICE_TOGGLE.style.justifyContent = "flex-end";
-
         PRICES[0].innerText = "19.99";
         PRICES[1].innerText = "24.99";
         PRICES[2].innerText = "39.99";

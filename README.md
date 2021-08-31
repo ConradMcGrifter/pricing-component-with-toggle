@@ -51,5 +51,5 @@ const proudOfThisFunc = () => {
 
 ### Useful resources
 
--   [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+-   [How to make animations trigger again after toggling a class](https://stackoverflow.com/questions/16050914/css-animation-doesnt-restart-when-resetting-class) - this helped me get the animations for the price to work.
 -   [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.

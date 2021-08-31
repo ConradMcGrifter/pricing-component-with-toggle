@@ -1,18 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes shrink {
   from {
-    opacity: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   to {
-    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
-@keyframes fadeIn {
+@keyframes shrink {
   from {
-    opacity: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   to {
-    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -179,7 +183,7 @@ label {
   margin-top: 2.5rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
-  border: solid 2px #f6f6fe;
+  border: solid 1px #f6f6fe;
   border-radius: 0.75rem;
   color: #f6f6fe;
   font-size: 1.4rem;
@@ -187,21 +191,21 @@ label {
 }
 
 .pricing-card > .learnMore:hover {
-  border: solid 2px #6d708d;
+  border: solid 1px #6d708d;
   background: white;
   color: #6d708d;
 }
 
 .pricing-card > .learnMore.-gradientBG {
   background: white;
-  border: solid 2px #696fdd;
+  border: solid 1px #696fdd;
   color: #6d708d;
 }
 
 .pricing-card > .learnMore.-gradientBG:hover {
   background: none;
   color: white;
-  border: solid white 2px;
+  border: solid white 1px;
 }
 
 .price-toggle--wrap {
@@ -327,6 +331,16 @@ label {
 
 .pricing-cards--container > .pricing-card {
   width: 100%;
+}
+
+.pricing-cards--container > .pricing-card .price--wrap {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.pricing-cards--container > .pricing-card .price--wrap.active {
+  -webkit-animation: shrink 0.25s ease-in;
+          animation: shrink 0.25s ease-in;
 }
 
 @media only screen and (min-width: 900px) {
