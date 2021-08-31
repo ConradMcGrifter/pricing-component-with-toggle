@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](finalScreenshot.png)
 
 ### Links
 
@@ -29,27 +29,16 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-    color: papayawhip;
-}
-```
+-   I was having a problem with the css animations not resetting properly but I found a fix on stackoverflow that uses scrollBy(0,0).
 
 ```js
-const proudOfThisFunc = () => {
-    console.log("🎉");
-};
+for (let i = 0; i < PRICES.length; i++) {
+    PRICES_WRAP[i].classList.remove("active");
+    PRICES_WRAP[i].scrollBy(0, 0);
+    PRICES_WRAP[i].classList.add("active");
+}
 ```
 
 ### Useful resources
 
 -   [How to make animations trigger again after toggling a class](https://stackoverflow.com/questions/16050914/css-animation-doesnt-restart-when-resetting-class) - this helped me get the animations for the price to work.
--   [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.

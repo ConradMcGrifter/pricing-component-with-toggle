@@ -1,0 +1,4 @@
+{
+    "prettier.ignorePath": ".prettierignore.html",
+    "prettier.printWidth": 100
+}
