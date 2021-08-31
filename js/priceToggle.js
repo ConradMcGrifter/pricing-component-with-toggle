@@ -12,8 +12,6 @@ PRICE_TOGGLE.addEventListener("click", () => {
         PRICES_WRAP[i].classList.add("active");
     }
 
-    // PRICES.forEach((price) => price.classList.add("active"));
-
     if (PRICE_TOGGLE.style.justifyContent == "flex-end") {
         PRICE_TOGGLE.style.justifyContent = "flex-start";
 
