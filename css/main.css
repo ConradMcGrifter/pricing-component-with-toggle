@@ -110,6 +110,7 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2rem;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -141,7 +142,7 @@ label {
 }
 
 .pricing-card .price--wrap > .dollarSign {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 .pricing-card > .planInfo--wrap {
@@ -165,14 +166,29 @@ label {
   margin-top: 2.5rem;
   background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
+  border: solid 2px #f6f6fe;
   border-radius: 0.75rem;
   color: #f6f6fe;
   font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.pricing-card > .learnMore:hover {
+  border: solid 2px #6d708d;
+  background: white;
+  color: #6d708d;
 }
 
 .pricing-card > .learnMore.-gradientBG {
   background: white;
+  border: solid 2px #696fdd;
   color: #6d708d;
+}
+
+.pricing-card > .learnMore.-gradientBG:hover {
+  background: none;
+  color: white;
+  border: solid white 2px;
 }
 
 .price-toggle--wrap {
@@ -247,6 +263,12 @@ label {
 
 .pricing-header {
   padding: 3em;
+}
+
+@media only screen and (min-width: 900px) {
+  .pricing-header {
+    padding: 0 3em 3em 3em;
+  }
 }
 
 .pricing-header .pricing-h1 {

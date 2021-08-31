@@ -24,6 +24,7 @@
 
     .price--wrap {
         display: flex;
+        margin-bottom: 2rem;
         @include flexCenter;
 
         > .price {
@@ -31,7 +32,7 @@
             @include flexCenter;
         }
         > .dollarSign {
-            font-size: 2.8rem;
+            font-size: 3rem;
         }
     }
 
@@ -55,13 +56,28 @@
         padding: 0.75em;
         margin-top: 2.5rem;
         background: $primary-gradient-buttons;
+        border: solid 2px color(neutral-very-light-grayish-blue);
         border-radius: 0.75rem;
         color: color(neutral-very-light-grayish-blue);
         font-size: 1.4rem;
+        cursor: pointer;
+
+        &:hover {
+            border: solid 2px color(neutral-grayish-blue);
+            background: white;
+            color: color(neutral-grayish-blue);
+        }
 
         &.-gradientBG {
             background: white;
+            border: solid 2px hsl(237, 63%, 64%);
             color: color(neutral-grayish-blue);
+
+            &:hover {
+                background: none;
+                color: white;
+                border: solid white 2px;
+            }
         }
     }
 }
