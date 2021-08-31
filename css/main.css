@@ -143,6 +143,7 @@ label {
 
 .pricing-card .price--wrap > .dollarSign {
   font-size: 3rem;
+  margin-right: 0.5rem;
 }
 
 .pricing-card > .planInfo--wrap {
