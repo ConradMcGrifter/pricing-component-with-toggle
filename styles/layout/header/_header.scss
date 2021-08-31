@@ -1,3 +1,13 @@
 .pricing-header {
     padding: 3em;
+
+    .pricing-h1 {
+        color: color(neutral-grayish-blue);
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    #price-toggle {
+        margin: 0 1rem;
+    }
 }

@@ -22,11 +22,14 @@
         margin-bottom: 2rem;
     }
 
-    > .price {
-        font-size: 5.4rem;
+    .price--wrap {
+        display: flex;
         @include flexCenter;
-        margin-bottom: 2rem;
 
+        > .price {
+            font-size: 5.4rem;
+            @include flexCenter;
+        }
         > .dollarSign {
             font-size: 2.8rem;
         }

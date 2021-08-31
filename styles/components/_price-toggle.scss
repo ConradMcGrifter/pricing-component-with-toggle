@@ -1,0 +1,31 @@
+.price-toggle--wrap {
+    @include flexCenter;
+
+    #price-toggle {
+        background: $primary-gradient-buttons;
+        min-height: 2rem;
+        min-width: 4.25rem;
+        padding: 0.35rem;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        transition: opacity 0.25s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        .circle {
+            height: 1.75rem;
+            width: 1.75rem;
+            background: white;
+            border-radius: 999px;
+        }
+    }
+    .annualLabel,
+    .monthlyLabel {
+        color: color(neutral-light-grayish-blue);
+    }
+}

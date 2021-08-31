@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
 @import "base";
-@import "components/price-card";
+@import "components/price-card", "components/price-toggle";
 @import "layout/main--container";
 @import "layout/header/header";
 @import "layout/cards/pricing-card--container";

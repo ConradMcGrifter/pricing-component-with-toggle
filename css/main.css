@@ -63,6 +63,10 @@ button {
   border: none;
 }
 
+label {
+  cursor: pointer;
+}
+
 .pricing-card {
   background: white;
   padding: 2.5rem;
@@ -102,7 +106,24 @@ button {
   margin-bottom: 2rem;
 }
 
-.pricing-card > .price {
+.pricing-card .price--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.pricing-card .price--wrap > .price {
   font-size: 5.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,10 +138,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 2rem;
 }
 
-.pricing-card > .price > .dollarSign {
+.pricing-card .price--wrap > .dollarSign {
   font-size: 2.8rem;
 }
 
@@ -155,6 +175,59 @@ button {
   color: #6d708d;
 }
 
+.price-toggle--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.price-toggle--wrap #price-toggle {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  min-height: 2rem;
+  min-width: 4.25rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.price-toggle--wrap #price-toggle:hover {
+  opacity: 0.5;
+}
+
+.price-toggle--wrap #price-toggle .circle {
+  height: 1.75rem;
+  width: 1.75rem;
+  background: white;
+  border-radius: 999px;
+}
+
+.price-toggle--wrap .annualLabel,
+.price-toggle--wrap .monthlyLabel {
+  color: #b3b5c6;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,6 +247,16 @@ button {
 
 .pricing-header {
   padding: 3em;
+}
+
+.pricing-header .pricing-h1 {
+  color: #6d708d;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pricing-header #price-toggle {
+  margin: 0 1rem;
 }
 
 .pricing-cards--container {
