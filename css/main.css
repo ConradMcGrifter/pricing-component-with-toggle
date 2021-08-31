@@ -95,12 +95,6 @@ label {
   color: #f6f6fe;
 }
 
-@media only screen and (min-width: 900px) {
-  .pricing-card.-big {
-    padding: 4rem 2.5rem;
-  }
-}
-
 .pricing-card > .pricePlan {
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -300,14 +294,6 @@ label {
   padding: 2rem;
 }
 
-.pricing-cards--container .pricing-card {
-  width: 100%;
-}
-
-.pricing-cards--container .pricing-card + .pricing-card {
-  margin-top: 1em;
-}
-
 @media only screen and (min-width: 900px) {
   .pricing-cards--container {
     -webkit-box-orient: horizontal;
@@ -319,5 +305,19 @@ label {
   .pricing-cards--container .pricing-card + .pricing-card {
     margin-top: 0;
   }
+}
+
+.pricing-cards--container .pricing-card {
+  width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  .pricing-cards--container .pricing-card.-big {
+    padding: 4rem 2.5rem;
+  }
+}
+
+.pricing-cards--container .pricing-card + .pricing-card {
+  margin-top: 1em;
 }
 /*# sourceMappingURL=main.css.map */

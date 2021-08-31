@@ -3,20 +3,26 @@
     width: 100%;
     padding: 2rem;
 
-    .pricing-card {
-        width: 100%;
-
-        & + .pricing-card {
-            margin-top: 1em;
-        }
-    }
-
     @include desktopSize {
         flex-direction: row;
         max-width: 95rem;
 
         .pricing-card + .pricing-card {
             margin-top: 0;
+        }
+    }
+
+    .pricing-card {
+        width: 100%;
+
+        &.-big {
+            @include desktopSize {
+                padding: 4rem 2.5rem;
+            }
+        }
+
+        & + .pricing-card {
+            margin-top: 1em;
         }
     }
 }
