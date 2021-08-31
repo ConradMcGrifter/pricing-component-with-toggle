@@ -200,13 +200,13 @@ label {
   color: #6d708d;
 }
 
-.pricing-card > .learnMore.-gradientBG {
+.pricing-card > .learnMore.-white {
   background: white;
   border: solid 1px #696fdd;
   color: #6d708d;
 }
 
-.pricing-card > .learnMore.-gradientBG:hover {
+.pricing-card > .learnMore.-white:hover {
   background: none;
   color: white;
   border: solid white 1px;
@@ -328,6 +328,13 @@ label {
             flex-direction: row;
     max-width: 95rem;
   }
+}
+
+.pricing-cards--container .pricing-card + .pricing-card {
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 900px) {
   .pricing-cards--container .pricing-card + .pricing-card {
     margin-top: 0;
   }
@@ -349,17 +356,7 @@ label {
 
 @media only screen and (min-width: 900px) {
   .pricing-cards--container > .pricing-card.-big {
-    padding: 4rem 2.5rem;
-  }
-}
-
-.pricing-cards--container > .pricing-card + .pricing-card {
-  margin-top: 1em;
-}
-
-@media only screen and (min-width: 900px) {
-  .pricing-cards--container > .pricing-card + .pricing-card {
-    margin-top: 0;
+    padding: 4.5rem 2.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

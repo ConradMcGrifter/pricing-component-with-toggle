@@ -6,12 +6,17 @@
     @include desktopSize {
         flex-direction: row;
         max-width: 95rem;
+    }
 
-        .pricing-card + .pricing-card {
+    .pricing-card + .pricing-card {
+        margin-top: 1em;
+
+        @include desktopSize {
             margin-top: 0;
         }
     }
 
+    // card component styles specific to this container
     > .pricing-card {
         width: 100%;
 
@@ -25,15 +30,7 @@
 
         &.-big {
             @include desktopSize {
-                padding: 4rem 2.5rem;
-            }
-        }
-
-        & + .pricing-card {
-            margin-top: 1em;
-
-            @include desktopSize {
-                margin-top: 0;
+                padding: 4.5rem 2.5rem;
             }
         }
     }
