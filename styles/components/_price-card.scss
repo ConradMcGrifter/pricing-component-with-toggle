@@ -16,21 +16,23 @@
         margin-bottom: 2rem;
     }
 
-    .price--wrap {
+    // this wraps the dollarSign span element + the price
+    > .price--wrap {
         display: flex;
         margin-bottom: 2rem;
         @include flexCenter;
 
-        > .price {
+        .price {
             font-size: 5.4rem;
             @include flexCenter;
         }
-        > .dollarSign {
+        .dollarSign {
             font-size: 3rem;
             margin-right: 0.5rem;
         }
     }
 
+    // this is the ul element that holds all the features of each plan
     > .planInfo--wrap {
         width: 100%;
         text-align: center;
@@ -47,6 +49,7 @@
     }
 
     > .learnMore {
+        text-align: center;
         width: 100%;
         padding: 0.75em;
         margin-top: 2.5rem;

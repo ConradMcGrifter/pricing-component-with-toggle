@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 html {
   min-height: 100%;
   -webkit-box-sizing: border-box;
@@ -100,7 +117,7 @@ label {
   margin-bottom: 2rem;
 }
 
-.pricing-card .price--wrap {
+.pricing-card > .price--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +135,7 @@ label {
           flex-direction: row;
 }
 
-.pricing-card .price--wrap > .price {
+.pricing-card > .price--wrap .price {
   font-size: 5.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,7 +152,7 @@ label {
           flex-direction: row;
 }
 
-.pricing-card .price--wrap > .dollarSign {
+.pricing-card > .price--wrap .dollarSign {
   font-size: 3rem;
   margin-right: 0.5rem;
 }
@@ -156,6 +173,7 @@ label {
 }
 
 .pricing-card > .learnMore {
+  text-align: center;
   width: 100%;
   padding: 0.75em;
   margin-top: 2.5rem;
@@ -307,17 +325,23 @@ label {
   }
 }
 
-.pricing-cards--container .pricing-card {
+.pricing-cards--container > .pricing-card {
   width: 100%;
 }
 
 @media only screen and (min-width: 900px) {
-  .pricing-cards--container .pricing-card.-big {
+  .pricing-cards--container > .pricing-card.-big {
     padding: 4rem 2.5rem;
   }
 }
 
-.pricing-cards--container .pricing-card + .pricing-card {
+.pricing-cards--container > .pricing-card + .pricing-card {
   margin-top: 1em;
+}
+
+@media only screen and (min-width: 900px) {
+  .pricing-cards--container > .pricing-card + .pricing-card {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

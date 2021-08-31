@@ -12,7 +12,7 @@
         }
     }
 
-    .pricing-card {
+    > .pricing-card {
         width: 100%;
 
         &.-big {
@@ -23,6 +23,10 @@
 
         & + .pricing-card {
             margin-top: 1em;
+
+            @include desktopSize {
+                margin-top: 0;
+            }
         }
     }
 }
